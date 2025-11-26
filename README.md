@@ -7,7 +7,8 @@ This repository explains how to provision an **Amazon EKS cluster** with **Terra
 ## 1. Steps to Provision the Cluster
 - Install and configure AWS CLI with appropriate IAM credentials.  
 - Use Terraform to provision the EKS cluster and supporting resources (VPC, subnets, IAM roles, node groups).  
-- After Terraform completes, update your local kubeconfig to connect `kubectl` to the new cluster.  
+- After Terraform completes, update your local kubeconfig to connect `kubectl` to the new cluster.
+- use AWS CLI cmd "aws eks update-kubeconfig --region <region> --name <cluster_name>" 
 - Verify that the cluster is active and worker nodes are in the `Ready` state.  
 
 ---
