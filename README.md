@@ -1,6 +1,6 @@
 # GitOps on AWS EKS with ArgoCD and NGINX
 
-This repository explains how to provision an **Amazon EKS cluster**, install **ArgoCD** for GitOps, and deploy an **NGINX application** that is exposed publicly via a LoadBalancer.
+This repository explains how to provision an **Amazon EKS cluster** with **Terraform**, install **ArgoCD** for GitOps, and deploy an **NGINX application** that is exposed publicly via a LoadBalancer.
 
 ---
 
@@ -35,6 +35,6 @@ This repository explains how to provision an **Amazon EKS cluster**, install **A
 - Define a Kubernetes Service of type **LoadBalancer** for the NGINX deployment.  
 - Apply the service manifest so that AWS provisions an external LoadBalancer.  
 - Retrieve the external IP or DNS name of the NGINX service from the cluster.  
-- Use this public URL to access the NGINX application from the internet.  
+- Use this public URL [a6a8875ac5b984111a1ff8422c930125-175703691.us-east-1.elb.amazonaws.com] to access the NGINX application from the internet.  
 - **Application**: points to GitHub repo with NGINX manifests.  
 - **NGINX**: deployed and exposed via LoadBalancer service, accessible publicly.  
