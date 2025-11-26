@@ -15,7 +15,8 @@ This repository explains how to provision an **Amazon EKS cluster** with **Terra
 ## 2. ArgoCD Installation and Login Instructions
 - Create a dedicated namespace called `argocd`.  
 - Install ArgoCD using the official manifests.  
-- Expose the ArgoCD server service as a **LoadBalancer** so it receives a public endpoint.  
+- Expose the ArgoCD server service as a **LoadBalancer** so it receives a public endpoint.
+- - URL for ArgoCD exposed via LoadBalancer [ae22c46f61aa84d72bff0899aa4ec7f3-1631253464.us-east-1.elb.amazonaws.com] with creds admin and mL8gkamPhPB8AFQk 
 - Retrieve the external IP or DNS name of the ArgoCD service from the cluster.  
 - Obtain the initial admin password from the ArgoCD secret in the `argocd` namespace.  
 - Log in to ArgoCD either via the CLI or by opening the ArgoCD web UI in a browser using the LoadBalancer URL.  
@@ -27,7 +28,7 @@ This repository explains how to provision an **Amazon EKS cluster** with **Terra
 - Create an ArgoCD Application resource that points to your GitHub repository containing the NGINX manifests.  
 - Ensure the Application is configured to track the correct branch and path in the repository.  
 - ArgoCD will automatically sync the manifests from GitHub into the target namespace in your cluster.  
-- Confirm that the NGINX pods are running successfully.  
+- Confirm that the NGINX pods are running successfully.
 
 ---
 
