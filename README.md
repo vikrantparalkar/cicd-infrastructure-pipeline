@@ -39,4 +39,11 @@ This repository explains how to provision an **Amazon EKS cluster** with **Terra
 - Retrieve the external IP or DNS name of the NGINX service from the cluster.  
 - Use this public URL [a6a8875ac5b984111a1ff8422c930125-175703691.us-east-1.elb.amazonaws.com] to access the NGINX application from the internet.  
 - **Application**: points to GitHub repo with NGINX manifests.  
-- **NGINX**: deployed and exposed via LoadBalancer service, accessible publicly.  
+- **NGINX**: deployed and exposed via LoadBalancer service, accessible publicly.
+
+- ---
+
+## 4. Exposing NGINX Publicly via NGINX Ingress Controller
+- The Public URL is http://nginx.vikrantparalkar.com/
+
+NOTE: I HAVE EXPOSED NGINX-APPLICATION VIA LOADBALANCER IN DEFAULT NAMESPACE AND VIA NGINX INGRESS CONTROLLER SERVICE IN ARGOCD NAMESPACE AS WELL
