@@ -3,7 +3,7 @@ variable "region" {
 }
 
 variable "cluster_name" {
-  default     = "nginx-eks"
+  default     = "nginx-eks2"
 }
 
 variable "vpc_cidr" {
